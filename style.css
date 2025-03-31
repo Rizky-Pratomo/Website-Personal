@@ -1,0 +1,141 @@
+/* Reset dasar */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #cbc8d1;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #6a0dad;
+    padding: 15px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background: #8b5cf6;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #6a0dad;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #222222;
+    color: white;
+}
+
+.dark-mode header {
+    background-color: #6a0dad;
+}
+
+.dark-mode .profile-card {
+    background-color: #333;
+    color: white;
+}
+
+/* Tombol Dark Mode */
+#toggleDarkMode {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background: #f4a261;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#toggleDarkMode:hover {
+    background: #e76f51;
+}
+
+/* Kartu Profil */
+.profile-card {
+    background: white;
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-card h2 {
+    font-size: 24px;
+    margin-bottom: 3px; /* Mengurangi jarak antara nama dan NIM */
+}
+
+.profile-card p {
+    font-size: 16px;
+    color: #99938e;
+    margin-top: 0; /* Menghapus jarak atas NIM agar lebih rapat */
+}
+
+.profile-card p {
+    margin: 6px 0; /* Mengurangi jarak antar paragraf */
+}
+
+.profile-card h3 {
+    margin-bottom: 8px; /* Memberi sedikit jarak antara judul dan daftar sosial media */
+}
+/* Animasi pada Profile Card */
+.profile-card {
+    background: white;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi */
+}
+
+.profile-card:hover {
+    transform: scale(1.05); /* Perbesar sedikit saat hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Tambahkan efek bayangan */
+}
+
+/* Dark Mode untuk Profile Card */
+.dark-mode .profile-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Dark Mode untuk Profil */
+.dark-mode .profile-card {
+    background-color: #333;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background: #6a0dad;
+    color: white;
+}

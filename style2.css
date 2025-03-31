@@ -1,0 +1,125 @@
+/* HEADER */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #4b0082; /* Ungu elegan */
+    color: white;
+    margin-bottom: 2px;
+}
+
+/* Reset dasar */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #cbc8d1;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.judul h1 {
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+/* NAVIGATION */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 9px;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 6px 12px;
+    transition: 0.4s;
+    border-radius: 6px;
+}
+
+.nav ul li a:hover,
+.nav ul li .active {
+    background-color: #9279a3;
+}
+
+/* DARK MODE BUTTON */
+#toggleDarkMode {
+    align-self: flex-end;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+#toggleDarkMode:hover {
+    background: #797777;
+}
+
+/* DARK MODE */
+.dark-mode {
+    background-color: #210929;
+    color: rgb(0, 0, 0);
+}
+
+.dark-mode .header {
+    background-color: #c017eb;
+}
+
+.dark-mode .theme-button {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* MATERI CONTAINER */
+.materi-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* MATERI BOX */
+.materi-box {
+    background-color: rgba(222, 124, 233, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(148, 18, 199, 0.952);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.materi-box img {
+    width: 350px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.materi-box h2 {
+    margin: 10;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.materi-box p {
+    font-size: 14px;
+    color: #333;
+    border-radius: 10px;
+}
+
+/* EFEK HOVER LEMBUT */
+.materi-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 5px 10px rgba(228, 227, 227, 0.719);
+}
+

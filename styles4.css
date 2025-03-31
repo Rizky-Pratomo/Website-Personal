@@ -1,0 +1,132 @@
+/* Reset */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background: #d3bfcd;
+    color: black;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #440132;
+    color: white;
+}
+
+/* Navigasi */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.nav-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background: #6a0dad;
+    color: white;
+}
+
+.nav-btn:hover {
+    background: #8a2be2;
+}
+
+.active {
+    background: #8a2be2;
+}
+
+/* Dark Mode Button */
+#toggleDarkMode {
+    align-self: flex-end;
+    background-color: rgba(207, 0, 243, 0.2);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dark-mode #toggleDarkMode {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+#toggleDarkMode:hover {
+    background: #e077ee;
+}
+
+/* Quiz Box */
+.quiz-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .quiz-container {
+    background: #311f2a;
+}
+
+/* Soal */
+.quiz-question {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+/* Jawaban */
+.answer {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    background: #d6c4d6;
+    transition: all 0.3s ease;
+}
+
+.answer:hover {
+    background: #6a0dad;
+    color: white;
+    transform: scale(1.05);
+}
+
+.dark-mode .answer {
+    background: #444;
+    color: white;
+}
+
+.dark-mode .answer:hover {
+    background: #8a2be2;
+    transform: scale(1.05);
+}
+
+/* Tombol Periksa Jawaban */
+#checkAnswers {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background: #6a0dad;
+    color: white;
+}
+
+#checkAnswers:hover {
+    background: #8a2be2;
+}
+
+/* Hasil Jawaban */
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
